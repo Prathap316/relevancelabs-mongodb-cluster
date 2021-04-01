@@ -1,0 +1,6 @@
+rs.initiate(
+    {
+        _id: "<%= @replicaname %>",
+        members: [ { _id: 0, host: "<%= @shard_server_repl1 %>:<%= @port %>" }, { _id: 1, host: "<%= @shard_server_repl2 %>:<%= @port %>" } ]
+    }
+)

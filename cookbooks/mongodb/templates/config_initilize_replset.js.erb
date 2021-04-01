@@ -1,0 +1,7 @@
+rs.initiate(
+    {
+        _id: "<%= @replicaname %>",
+        configsvr: true,
+        members: [ { _id: 0, host: "<%= @config_server_repl1 %>:<%= @port %>" }, { _id: 1, host: "<%= @config_server_repl2 %>:<%= @port %>" } ]
+    }
+)

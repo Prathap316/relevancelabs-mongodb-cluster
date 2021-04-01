@@ -1,0 +1,27 @@
+{
+    "id":"dev",
+    "dbpath":"/data",
+    "logpath":"/var/log/mongodb/mongod.log",
+    "replicaname": {
+        "config":"Dev-csr",
+        "shard1":"Dev-rs1",
+        "shard2":"Dev-rs2"
+    },
+    "port":{
+        "config":"27019",
+        "shard":"27018",
+        "router":"27017"
+    },
+    "config_server":{
+        "repl1":"10.0.15.171",
+        "repl2":"10.0.15.172"
+    },
+    "shard1_server":{
+        "repl1":"10.0.15.173",
+        "repl2":"10.0.15.174"
+    },
+    "shard2_server":{
+        "repl1":"10.0.15.175",
+        "repl2":"10.0.15.176"
+    }
+}
